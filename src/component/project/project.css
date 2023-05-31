@@ -1,0 +1,147 @@
+.preview{
+  visibility: hidden;
+  background-image: linear-gradient(to top,rgba(0,0,0,0.4) 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  transition: background-position 0.5s ease-in-out;
+}
+.projectPrev:hover .preview{
+visibility: visible;
+background-position: bottom;
+}
+#projectPrevd .projectSec{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: wrap;
+  margin:20px;
+}
+.projectPrev:hover #liveBtn{
+ position: relative;
+ animation:example 0.7s forwards;  
+}
+@keyframes example {
+  0% {
+   left:0px;
+   top:0px;
+  }
+  100%{
+   left:93px;
+   top:0px;
+  }
+}
+.projectPrev{
+ box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+.projectPrev:hover #CodeBtn{
+ position: relative;
+ animation:example1 0.7s forwards;
+}
+@keyframes example1 {
+  0% {
+   right:0px;
+   top:0px;
+  }
+  100%{
+   right:93px;
+   top:0px;
+  }
+}
+#liveBtn, #CodeBtn{
+ font-size: 20px;
+ background-color: #e2e8ce;
+ border-radius: 5px;
+}
+.preview button{
+ height:45px;
+ width:100px;
+ background-color: aliceblue;
+ margin-right:5px;
+}
+
+.explore__btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width:768px){
+  /* #projectPrevd{
+    height: auto;
+  } */
+  /* #projectPrevd .projectSec{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap; */
+    /* max-width:768px;
+    display: grid;
+    row-gap: 30px;
+    place-items: center;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr)); */
+  /* } */
+  /* #projectPrevd .projectSec{
+   
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 40px;
+  } */
+  
+  #projectPrev{
+    margin-top: 0px;
+  }
+  #projectPrevd .projectSec .projectPrev{
+    height:200px;
+    width:350px;
+    background-size : 350px 200px;
+    background-repeat : no-repeat;
+  }
+  .projectPrev .preview{
+    height:200px;
+    width:350px;
+  }
+  .projectPrev .preview button{
+    height:40px;
+    width:90px;
+  }
+  .projectPrev:hover #liveBtn{
+    position: relative;
+    animation:example 0.7s forwards;  
+  }
+  @keyframes example {
+     0% {
+      left:0px;
+      top:0px;
+     }
+     100%{
+      left:80px;
+      top:0px;
+     }
+  }
+  .projectPrev{
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+  }
+  .projectPrev:hover #CodeBtn{
+    position: relative;
+    animation:example1 0.7s forwards;
+  }
+  @keyframes example1 {
+     0% {
+      right:0px;
+      top:0px;
+     }
+     100%{
+      right:80px;
+      top:0px;
+     }
+  }
+  .fd{
+    max-width: 758px;
+  }
+}
+.explore__sec{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

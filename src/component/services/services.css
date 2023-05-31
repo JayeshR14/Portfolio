@@ -1,0 +1,52 @@
+.services{
+  min-height: 700px;
+  letter-spacing: 0px;
+}
+
+.services .ser__container{ 
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+  flex-flow: wrap;
+}
+.ser__sec:hover{
+  transform: scale(1.01);
+}
+.services h3{
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+.ser__container img{
+  height:40px;
+}
+.ser__container .ser__sec{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 20px;
+  padding:20px;
+  border-radius: 20px;
+  background-color: rgb(246, 246, 246);
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.ser__sec div{
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+.ser__sec{
+  min-height: 470px;
+  margin: auto;
+}
+
+@media only screen and (max-width:768px){
+  .services h3{
+    margin-bottom: 50px;
+    margin-top:50px ;
+    font-size: 50px;
+  }
+  .services .ser__container{
+    max-width:768px;
+    row-gap: 30px;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  } 
+}

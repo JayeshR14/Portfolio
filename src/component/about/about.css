@@ -1,0 +1,83 @@
+#about div p{
+  width:500px;
+} 
+.deinfo{
+  letter-spacing: 0px;
+}
+.aboutsec{
+  letter-spacing: 0px;
+  background-color: #dddddd;
+}
+.separate{
+  background-color: #3d3d3d;
+}
+#about .aboutInfo .activeLinks .links{
+  cursor: pointer;
+  position: relative;
+  background-color: rgb(184, 184, 184);
+}
+@media only screen and (max-width:768px){
+  .aboutNew .aboutInfo .activeLinks .links{
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(184, 184, 184);
+  }
+  .aboutNew .aboutInfo .activeLinks .links:before{
+    content: "";
+    position: absolute;
+    width:0;
+    height:3px;
+    bottom: 0;
+    left:0;
+    background-color: #161616;
+    visibility: hidden;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+  }
+  .aboutNew .aboutInfo .activeLinks .links:hover:before
+  {
+    visibility: visible;
+    width: 100%;
+  }
+  .aboutNew{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+     max-width: 768px;
+     margin-top: 0px;
+   }
+   .aboutNew .aboutImg{
+        display: none;
+    }
+    .aboutNew .aboutInfo{
+      max-width:400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left:0;
+   }
+   .aboutNew .aboutInfo .aboutme{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 23px;
+   }
+   #about div p{
+    width:350px;
+   }
+   .aboutNew .aboutInfo .deinfo .de{
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 21px;
+   }
+   .aboutNew .aboutInfo .aboutsec{
+     padding: 0;
+    width:350px;
+    margin-top: 15px;
+   }
+   .aboutsec p{
+      font-size: 20px;   
+    text-align: center;
+   }
+
+}
